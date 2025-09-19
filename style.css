@@ -2,7 +2,14 @@
    margin:0;
    padding: 0;
    box-sizing: border-box;
+   scroll-behavior: smooth;
    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#check{
+    display: none;
+}
+#check label{
+    display: none;
 }
 #nav{
     height:100px;
@@ -95,7 +102,7 @@ button{
     border:2px solid #1bbd36;
     padding:10px 20px 10px 20px;
     background-color:rgba(64,64,64,0.5);
-    margin-left:500px;
+    margin-left:600px;
     position: relative;
     z-index: 8;
     border-radius: 10%;
@@ -128,6 +135,10 @@ button:hover{
     z-index: 7;
     display: flex;
     flex-wrap: wrap;
+}
+#second_section img:hover{
+    transition: all 3s ease;
+    box-shadow: #1bbd36;
 }
  .sona{
     display: flex;
@@ -185,7 +196,7 @@ button:hover{
     text-align: center;
     line-height: 100px;
 }
-#fourth_section #reel{
+/* #fourth_section #reel{
     width:100px;
     height: 2px;
     background-color: #1bbd36;
@@ -194,9 +205,10 @@ button:hover{
     justify-content: center;
     margin-left: 650px;
     /* align-items: center; */
-}
+ */
 #fourth_section #okk{
-    display:flex;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
     align-items: center;
     justify-content: center;
     gap: 5px;
@@ -286,4 +298,13 @@ button:hover{
 }
 #footer #last span{
     color:#1bbd36;
+}
+@media(max-width:420px){
+    #nav ul{
+        display:block;
+        justify-content: center;
+        align-content: center;
+    }
+    #nav ul li:checked 
+
 }
