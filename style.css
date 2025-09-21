@@ -96,7 +96,7 @@
     text-align: center;
     color:white;
 }
-button{
+#first_section button{
     margin-top: 10px;
     align-self: center;
     border:2px solid #1bbd36;
@@ -108,13 +108,13 @@ button{
     border-radius: 10%;
     color: white;
 }
-button:hover{
+#first_section button:hover{
     background-color: #1bbd36;
 }
 #second_section{
     width:100%;
     /* border: 1px solid black; */
-    height:1500px;
+    /* height:1500px; */
     position:relative;
     background-color:whitesmoke;
     display: flex;
@@ -177,6 +177,7 @@ button:hover{
     padding-top: 5px;
     /* align-items: center; */
     display: block;
+    /* grid-template-columns: auto auto auto; */
     padding: 50px;
     justify-content: center;
     align-items: center;
@@ -207,16 +208,19 @@ button:hover{
     /* align-items: center; */
  */
 #fourth_section #okk{
-    display:grid;
-    grid-template-columns: auto auto auto auto;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    /* grid-template-columns: auto auto auto auto; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-left: 600px;
     gap: 5px;
+
     
 }
 #fourth_section #okk div{
     height:20px;
-    width:50px;
+    width:40px;
+    /* display: flex; */
 }
 #fourth_section #okk div:hover{
     border-radius: 10%;
@@ -234,28 +238,28 @@ button:hover{
 #fourth_section #img img{
     width:400px;
 }
-#fifth_section{
+#fifth_section h1{
+    text-align: center;
+}
+#fifth_section #clt{
+    display:grid;
+    grid-template-columns: auto auto auto auto ;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
     padding-top: 50px;
     text-align: center;
+    /* align-items: center;  */
+}
+#fifth_section #clt div{
+    border:1px solid grey;
+    width:300px;
+    height: 200px;
     justify-content: center;
-    align-items: center;
-    line-height: 100px;
 }
-#fifth_section table{
-    /* border:1px solid rgb(128,128,128,0.1); */
-     width:80%;
-     height: 400px;
-     margin-left: 125px;
-     justify-content: center;
-     align-items: center;
-
-}
-#fifth_section table tr img{
-    height:50px;
-    width:100px;
-}
-#fifth_section table tr img:hover{
-    transition: all 2s ease;
+#fifth_section #clt div img{
+    width: 200px;
+    height: 150px;
 }
 #footer{
     width:100%;
@@ -299,12 +303,117 @@ button:hover{
 #footer #last span{
     color:#1bbd36;
 }
-@media(max-width:420px){
-    #nav ul{
-        display:block;
+@media(max-width:420px ){
+    #nav{
+        height: 50px;
+        width:100%;
+        padding :0px;
+        margin-top: 0px;
+    }
+    #nav h1{
+        font-size: 20px;
+        text-align: left;
+        /* margin-left:none; */
+    }
+    label{
+        margin-left: 350px;
+        margin-top: 150px;
+        z-index: 21;
+    }
+    #nav ul li a{
+        display:none;
         justify-content: center;
         align-content: center;
+        margin-left:50px;
     }
-    #nav ul li:checked 
-
+    #nav ul li a :checked {
+        display: block;
+    }
+     #first_section{
+        display: block;
+     }
+    #first_section img{
+        height: 600px;
+        width:100%;
+        /* z-index: 9; */
+        margin-top: 50px;
+    }
+    #first_section .box{
+        width:70%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    #first_section button{
+        margin-left: 100px;
+        background-color: rgb(128,128,128,0.2);
+    }
+    #first_section button:hover{
+        background-color: #1bbd36;
+    }
+    #second_section{
+        display:block;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    #second_section .sona{
+        margin-left: 0px;
+        /* margin-top: 900px; */
+        width:100%;
+        /* height: 700px; */
+        /* padding-top: 900px; */
+        /* z-index: 7; */
+        position: relative;
+    }
+    #second_section .sona .story{
+        width:100%;
+        height: auto;
+        margin-left: 0px;
+        padding: 10px 10px 10px 50px;
+    }
+    #second_section img{
+        margin-left: 0px;
+        margin-top:0px;
+        width:100%;
+        /* z-index: 8; */
+        position: relative;
+    }
+    #third_section{
+        display: block;
+        justify-content: center;
+        padding: 20px 20px 20px 20px;
+        gap:20px;
+    }
+    #third_section div{
+        gap:30px;
+         line-height:30px ;
+         margin-top: 20px;
+    }
+    #fourth_section{
+        display:block;
+    }
+    #fifth_section{
+        display: block;
+    }
+    #fifth_section #clt{
+        display: block;
+        justify-content: center;
+        padding-left: 50px;
+    }
+    #footer{
+        display:block;
+        margin-top: 20px;
+    } 
+    #footer #imp{
+        display: block;
+        padding: 10px 10px 10px 10px;
+    }
+    #footer #imp div{
+        margin:20px;
+    }
+    #footer #last{
+        text-align: center;
+    }
 }
